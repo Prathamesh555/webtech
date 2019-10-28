@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id = "ola" onmouseover="mover()" onmouseout="mout(this)" 
+style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+Mouse Over Me</div>
+<br><br>
+<div id="date"> </div>
+<br><br>
+<img id="image" src="1.jpg" height=200 width=400>
+<script>
+	
+function mover() 
+{
+document.getElementById("ola").innerHTML = "<span style='color: green;'>Something</span></br>"; 
+}
+function mout(obj)
+{
+  obj.innerHTML = "Mouse Over Me"
+}
+document.getElementById('date').innerHTML=Date()
+</script>
+
+</body>
+</html> 
