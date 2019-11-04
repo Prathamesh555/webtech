@@ -1,0 +1,36 @@
+<html>
+  <head> <title>Switching the list types </title>
+    <script language = "javascript" type = "text/javascript">
+      var choice;
+      var startTag;
+      var endTag;
+      var validInput=true;
+      var listType;
+      choice=window.prompt("Select list style \n" + "1 for numbered , 2 for Alphabets");
+      switch(choice){
+        case"1":
+        startTag="<ol>";
+          endTag="</ol>";
+          listType="<h2>Numbered List </h2>";
+          break;
+          case"2":
+          startTag="<ol style='list-style-type:upper-alpha'>";
+            endTag="</ol>";
+            listType="<h2>Alphabetical List </h2>";
+            break;
+            default: validInput=false;
+      }
+      if(validInput==true){
+        document.writeln(listType+startTag);
+        for (var i=1; i<=3; i++){
+          document.writeln("<li>I am list item number " +i+"</li>" );
+        }
+        document.writeln(endTag);
+      }
+      else {
+        document.writeln("Invalid choice: "+ choice);
+      }
+      </script>
+  </head>
+  <body></body>
+  </html>
