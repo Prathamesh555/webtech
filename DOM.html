@@ -1,0 +1,42 @@
+<html>
+<head> <title> Dom Functionality </title>
+</head>
+<link rel="stylesheet" href="dom.css">
+<script src="dom.js" charset="utf-8"></script>
+<body>
+  <h1 id="bigheading" class="highlighted"> [bigheading] Document Object Model </h1>
+  <h6 id="smallheading"> [smallheading] Let's go </h6>
+
+  <p id="para1">[para1] This is para1 guys. This is an illustration of how DOM works with HTML</p>
+  <p id="para2">[para2] This is para2. DOM allows dynamic access to HTML elements for their manipulation</p>
+  <p id="para3">[para3]The list [list] below is for illustration purpose: </p>
+
+  <ul id="list">
+    <li id="item1">getElementById and parentNode</li>
+    <li id="item2">insertefore and appendChild</li>
+    <li id="item3">replaceChild and removeChild</li>
+  </ul>
+
+  <div class="nav" id="nav">
+
+    <form>
+      <p><input type="text" id="gbi" >
+      <input type="button" id="byIdButton" value="getById"></p>
+
+      <p><input type="text" id="ins">
+      <input type="button" id="insertButton" value="Insert Before"></p>
+
+      <p><input type="text" id="append" >
+      <input type="button" id="appendButton" value="Append Child"></p>
+
+      <p><input type="text" id="replace" >
+      <input type="button" id="replaceButton" value="Replace Current"></p>
+
+      <p><input type="button" id="removeButton" value="Remove Child"></p>
+
+      <p><input type="button" id="parentButton" value="Get Parent"></p>
+
+    </form>
+    </div>
+  </body>
+</html>
